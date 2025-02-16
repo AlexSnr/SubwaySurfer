@@ -19,7 +19,9 @@ public class Spielverwalter{
         meinHimmel = new GLHimmel("Himmel.jpg");
         
     
-    
+        
+        
+       
     
     }
                     
