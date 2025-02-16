@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=Zug
+comment1.params=posX\ posY\ posZ
+comment1.target=Zug(int,\ int,\ int)
+numComments=2
