@@ -10,7 +10,13 @@ public class Spielverwalter{
         meinlicht = new GLLicht();
        
         Zug meinZug;
-        meinZug = new Zug(0,63,0);
+        meinZug = new Zug(200,64,0);
+        
+        Gleis meinGleis;
+        meinGleis = new Gleis(0,55,0);
+        
+        Mensch meinMensch;
+        meinMensch = new Mensch(200,30,200);
         
         GLBoden meinBoden;
         meinBoden = new GLBoden("Boden.jpg");

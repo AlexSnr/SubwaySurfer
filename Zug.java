@@ -6,11 +6,21 @@ public class Zug{
         GLQuader meinGehaeuse;
         GLQuader meinGehaeuseFront;
         GLQuader meinGehaeuseDach;
+        GLQuader meinGehaeuseSchutz;
+        GLQuader meinGehaeuseKueler;
+        
         meinGehaeuse = new GLQuader(posX,posY,posZ,75,100,300);
         meinGehaeuseFront = new GLQuader(posX+0,posY+0,posZ+150,70,98,20);
         meinGehaeuseDach = new GLQuader(posX+0,posY+50,posZ+0,73,10,297);
-        meinGehaeuse.setzeFarbe(152,20,0);
-        meinGehaeuseFront.setzeFarbe(152,20,0);
+        meinGehaeuseSchutz = new GLQuader(posX+0,posY-50,posZ+160,73,15,5);
+        meinGehaeuseKueler = new GLQuader(posX+0,posY-25,posZ+160,30,7,5);
+        
+        meinGehaeuse.setzeFarbe(0.8,0.05,0);
+        meinGehaeuseFront.setzeFarbe(0.8,0.05,0);
+        meinGehaeuseDach.setzeFarbe(0.3,0.3,0.3);
+        meinGehaeuseSchutz.setzeFarbe(0.3,0.3,0.3);
+        
+        meinGehaeuseSchutz.drehe(170, 0, 0);
         
         //Räder
         GLZylinder meinRadVR; //VR = Vorderrad
@@ -58,11 +68,16 @@ public class Zug{
         meineFensterHR.setzeFarbe(0,193,255);
         meineFensterHL.setzeFarbe(0,193,255);
         meineFensterFront.setzeFarbe(0,193,255);
+        
+        //Scheinwerfer
+        GLZylinder meineScheinwerferR;
+        GLZylinder meineScheinwerferL;
+        
+        meineScheinwerferR = new GLZylinder(posX+27,posY-20,posZ+160,5,6);
+        meineScheinwerferL = new GLZylinder(posX-27,posY-20,posZ+160,5,6);
     
-    
-    
-    
-    
+        meineScheinwerferR.setzeFarbe(0.7,0.7,0);
+        meineScheinwerferL.setzeFarbe(0.7,0.7,0);
     
     
     }
